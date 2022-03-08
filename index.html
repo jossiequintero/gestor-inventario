@@ -1,0 +1,92 @@
+<!-- 
+  Use Emmet shortcuts to even faster experience.
+  For an example: type div#root and press Tab.
+-->
+<!DOCTYPE html>
+<!-- 
+  Use Emmet shortcuts to even faster experience.
+  For an example: type div#root and press Tab.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Styles will be included here automatically -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>RED NEURONAL TIPO PERCEPTRÓN</h1>
+    <h2>CLASES 1</h2>
+    <p>Entrenar una red neuronal artificial tipo perceptrón, dado los siguientes puntos y la salida deseada correspondiente a cada punto. Considerar el vector de pesos W y el valor del BIAS suministrados. Resolver el problema de forma gráfica y analítica.
+    </p>
+
+    <form>
+        <div class="puntos-container">
+            <h3>Puntos</h3>
+            <div id="puntos-entrada">
+                <fieldset>
+                    <span>P1 ( </span>
+                    <input type="number" id="punto_1_x1" class="puntos" value="2">
+                    <span> , </span>
+                    <input type="number" id="punto_1_x2" class="puntos">
+                    <span> ) T =  </span>
+                    <input type="number" id="punto_1_t" class="puntos">
+                </fieldset>
+            </div>
+            <div>
+                <input type="button" value="Nuevo Punto" class="btn" onclick="nuevoPunto()">
+                <input type="button" value="Aceptar" class="btn" onclick="llenar()">
+            </div>
+            <div id="puntos-ingresados" class="ingresados">
+                <table id="tabla">
+                    <tr>
+                        <th>Puntos</th>
+                        <th>x1</th>
+                        <th>x2</th>
+                        <th>T</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="puntos-container">
+            <h3>Puntos de Prueba</h3>
+            <div id="puntos-prueba"></div>
+            <div>
+                <input type="button" value="Nuevo Punto" class="btn" onclick="nuevoPunto()">
+                <input type="button" value="Aceptar" class="btn" onclick="llenar()">
+            </div>
+            <div id="puntos-ingresados" class="ingresados">
+                <table id="tabla">
+                    <tr>
+                        <th>Puntos</th>
+                        <th>x1</th>
+                        <th>x2</th>
+                        <th>T</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h3>Peso</h3>
+        <fieldset>
+            <span>W = </span>
+            <input type="text" name="punto_8_t" class="puntos">
+        </fieldset>
+        <h3>Sesgo</h3>
+        <fieldset>
+            <span>BIAS = </span>
+            <input type="text" name="punto_8_t" class="puntos">
+        </fieldset>
+    </form>
+    <div class="btn-container">
+        <button id="calcular" class="btn btn-calcular" onclick="calcular()">Calcular</button>
+    </div>
+    <div id="result"></div>
+    <div>
+        <button onclick="decirHello()">Hello</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
